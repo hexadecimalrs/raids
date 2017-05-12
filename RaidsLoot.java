@@ -1,5 +1,12 @@
 import java.util.Scanner;
-
+/*
+	* Compile & Run in java however you know how to
+		e.g. cmd line 
+		>javac RaidsLoot.java
+		>java RaidsLoot
+	* Enter team points to get rates of items
+	* If you want a percentage, divide 1 by rate e.g. 1 in 10 raids = 1/10 = 10%
+*/
 public class RaidsLoot{
 	public static void main(String[]args){
 		String []loots = {"Arcane prayer scroll, Dexterous prayer scroll: 1 in ", "Dragon sword, Dragon harpoon, Dragon thrownaxe: 1 in ",
@@ -7,8 +14,7 @@ public class RaidsLoot{
 						"Elder maul, Kodai insignia, Twisted bow: 1 in "
 		};
 		double []rate = {(20.0/84.0), (5.0/84.0), (4.0/84.0), (3.0/84.0), (2.0/84.0)};
-		double uniqueRate
-		;
+		double uniqueRate;
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter total points: ");
 		int total = scan.nextInt();
